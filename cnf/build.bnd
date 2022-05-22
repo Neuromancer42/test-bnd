@@ -1,0 +1,30 @@
+#
+# This file is left open for you to define your macros
+#
+
+src:          			src/
+bin:          			target/classes
+testsrc:      			test/src
+testbin:      			target/test-classes
+target-dir:   			target
+
+javac.source:           11
+javac.target:           11
+javac.compliance:       11
+javac.debug:            on
+-sources                false
+
+#
+# Developer Information
+#
+
+Bundle-Vendor:          foo
+
+base.version:           1.0.0
+Bundle-Versiion:        ${base.version}.${tstamp}
+-pom:                   version=${base.version}-SNAPSHOT
+-groupId:               com.neuromancer42.test
+
+# TODO: -releaserepo?
+
+-includepackage         *;from:=classes

@@ -1,0 +1,9 @@
+-buildpath:\
+    foo,\
+    ${junit}
+
+Fragment-Host: foo
+
+-dependson: foo
+
+Test-Cases:${classes;NAMED;*Test}
